@@ -1,0 +1,88 @@
+
+.dropdown-container {
+  width: 100%;
+  max-width: 550px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* Search Box with Selected Tags */
+.search-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  min-height: 40px;
+  box-sizing: border-box;
+  cursor: text;
+}
+
+/* Selected Tags inside Search Box */
+.selected-tag {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 15px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.remove-btn {
+  margin-left: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.remove-btn:hover {
+  color: red;
+}
+
+/* Search Input */
+.search-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 5px;
+  font-size: 16px;
+}
+
+/* Dropdown */
+.dropdown {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: white;
+  margin-top: 5px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+}
+
+/* Dropdown Items */
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .dropdown-container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
